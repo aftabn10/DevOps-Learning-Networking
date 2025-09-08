@@ -1,6 +1,6 @@
 # DevOps-Learning-Networking
 
-This repository 
+This repository shows my learning journey through Networking. This covers topics ranging from basic to advanced levels of Networking for DevOps.  
 
 # What I learnt...
 
