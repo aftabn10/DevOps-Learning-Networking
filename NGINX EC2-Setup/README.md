@@ -69,3 +69,24 @@ Routing policy: Simple
 TTL: Default (300 seconds)
 
 📸 Screenshot: Route53 A record configuration
+
+## 5. Test the Domain
+
+Visited:
+```
+http://nginx.aftabn10.co.uk
+```
+*📸 Screenshot: Browser showing NGINX page served via domain*
+
+## 6. Stop the Instance 
+
+- After Testing, I stopped the EC2 instance to avoid any compute charges.
+
+## Summary
+
+- :heavy_check_mark: Registered domain in Route53
+- :heavy_check_mark: Deployed EC2 instance with NGINX
+- :heavy_check_mark: Configured DNS A record in Route53
+- :heavy_check_mark: Verified NGINX accessible via domain
+- :heavy_check_mark: Verified NGINX accessible via domain
+- :heavy_check_mark: Stopped instance to minimize AWS costs
