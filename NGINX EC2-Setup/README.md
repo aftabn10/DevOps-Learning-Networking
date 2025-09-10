@@ -6,7 +6,7 @@ This project documents the steps I took to set up an **NGINX web server on AWS E
 
 ## 1. Buy a Domain
 - Registered a domain using **AWS Route53 → Registered domains**.
-- Example domain: `myname.co.uk`
+- Example domain: `aftabn10.co.uk`
 *can also be done via Cloudflare*
 
 📸 *Screenshot: Domain registration page*
@@ -85,8 +85,8 @@ http://nginx.aftabn10.co.uk
 ## Summary
 
 :heavy_check_mark: Registered domain in Route53<br>
-:heavy_check_mark: Deployed EC2 instance with NGINX
-:heavy_check_mark: Configured DNS A record in Route53
-:heavy_check_mark: Verified NGINX accessible via domain
-:heavy_check_mark: Verified NGINX accessible via domain
+:heavy_check_mark: Deployed EC2 instance with NGINX<br>
+:heavy_check_mark: Configured DNS A record in Route53<br>
+:heavy_check_mark: Verified NGINX accessible via domain<br>
+:heavy_check_mark: Verified NGINX accessible via domain<br>
 :heavy_check_mark: Stopped instance to minimize AWS costs
