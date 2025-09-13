@@ -51,7 +51,7 @@ Tested in browser:
 ```cpp
 http://<EC2_PUBLIC_IP>
 ```
-![](Screenshots/InitialNGINXPage.jpg)
+![](Screenshots/InititalNGINXPage.jpg)
 
 ## 4. Configure DNS in Route53
 
