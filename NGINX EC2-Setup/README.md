@@ -43,7 +43,7 @@ Verified it works
 ```bash
 systemctl status nginx
 ```
-![](Screenshots/InititalNGINXPage.jpg)
+![](Screenshots/NGINXservicestatus.jpg)
 
 What I was looking for here was to see the status and as you seen from the image, the **status** shows its active and running. 
 
