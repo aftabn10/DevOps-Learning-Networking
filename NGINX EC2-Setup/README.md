@@ -16,16 +16,15 @@ This project documents the steps I took to set up an **NGINX web server on AWS E
 ## 2. Launch an EC2 Instance
 - Logged into **AWS Console → EC2 → Launch Instances**.
 - Configurations:
-  - **AMI**: Ubuntu 22.04
+  - **AMI**: Amazon Linux 2023
   - **Instance type**: `t2.micro` (Free Tier)
   - **Security group**: Allowed inbound traffic on:
     - Port 22 (SSH)
     - Port 80 (HTTP)
-- Generated and downloaded a key pair for SSH.
+- Generated a new key pair and downloaded it onto local machine.
 
 📸 *Screenshot: EC2 instance running in AWS Console*  
-📸 *Screenshot: Security group rules (showing ports 22 + 80 open)*  
-
+![alt text](Screenshots/SecurityGroupRules.jpg)
 ---
 
 ## 3. Install and Start NGINX
@@ -36,22 +35,22 @@ ssh -i my-key.pem ubuntu@<EC2_PUBLIC_IP>
 
 Install and enabled NGINX
 ```bash
-sudo apt update -y
-sudo apt install nginx -y
-sudo systemctl enable nginx
+sudo yum update -y
+sudo yum install nginx -y
 sudo systemctl start nginx
+sudo systemctl enable nginx
 ```
 Verified it works
 ```bash
 systemctl status nginx
 ```
-📸 *Screenshot: NGINX service status*
+![alt text](Screenshots/NGINXservicestatus.jpg)
 
 Tested in browser:
 ```cpp
 http://<EC2_PUBLIC_IP>
 ```
-*📸 Screenshot: NGINX welcome page via public IP*
+![alt text](Screenshots/InitialNGINXPage.jpg)
 
 ## 4. Configure DNS in Route53
 
