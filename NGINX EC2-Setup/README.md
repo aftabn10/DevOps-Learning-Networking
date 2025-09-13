@@ -22,9 +22,8 @@ This project documents the steps I took to set up an **NGINX web server on AWS E
     - Port 22 (SSH)
     - Port 80 (HTTP)
 - Generated a new key pair and downloaded it onto local machine.
-
-📸 *Screenshot: EC2 instance running in AWS Console*  
-![alt text](Screenshots/SecurityGroupRules.jpg)
+ 
+![](Screenshots/SecurityGroupRules.jpg)
 ---
 
 ## 3. Install and Start NGINX
@@ -46,11 +45,13 @@ systemctl status nginx
 ```
 ![alt text](Screenshots/NGINXservicestatus.jpg)
 
+What I was looking for here was to see the status and as you seen from the image, the **status** shows its active and running. 
+
 Tested in browser:
 ```cpp
 http://<EC2_PUBLIC_IP>
 ```
-![alt text](Screenshots/InitialNGINXPage.jpg)
+![](Screenshots/InitialNGINXPage.jpg)
 
 ## 4. Configure DNS in Route53
 
