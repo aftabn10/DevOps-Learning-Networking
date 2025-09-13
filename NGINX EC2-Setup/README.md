@@ -58,7 +58,7 @@ http://<EC2_PUBLIC_IP>
 - Went to Route53 → Hosted zones.
 - Selected the hosted zone for my domain (myname.co.uk).
 - Created an A Record:
--Record name: nginx
+-Record name: nginx (so this shows up as nginx.domain.co.uk)
 
 Record type: A
 
@@ -68,19 +68,17 @@ Routing policy: Simple
 
 TTL: Default (300 seconds)
 
-📸 Screenshot: Route53 A record configuration
-
 ## 5. Test the Domain
 
 Visited:
 ```
 http://nginx.aftabn10.co.uk
 ```
-*📸 Screenshot: Browser showing NGINX page served via domain*
+![](Screenshots/nginxaftabdomain.jpg)
 
 ## 6. Stop the Instance 
 
-- After Testing, I stopped the EC2 instance to avoid any compute charges.
+- After Testing, I stopped the EC2 instance to avoid any compute charges and deleted the A record to ensure everything is on point.
 
 ## Summary
 
