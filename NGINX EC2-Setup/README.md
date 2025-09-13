@@ -9,8 +9,6 @@ This project documents the steps I took to set up an **NGINX web server on AWS E
 - Example domain: `aftabn10.co.uk`
 *can also be done via Cloudflare*
 
-📸 *Screenshot: Domain registration page*
-
 ---
 
 ## 2. Launch an EC2 Instance
